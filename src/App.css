@@ -1,38 +1,385 @@
 .App {
-  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* MENU */
+.Menu {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(222 217 217 / 6%),
+      rgb(222 217 217 / 6%)
+    ),
+    url("./img/menuBackgrnd.PNG");
   min-height: 100vh;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  /* padding-bottom: 40px; */
+  /* width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.wrap {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.Wrap__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  margin-top: 0px;
+}
+
+.Wrap__header .img1 {
+  height: 8rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  /* font-size: 37.5%; 6px */
+}
+
+.Wrap__header .img2 {
+  height: 7rem;
+  cursor: pointer;
+}
+
+/* .Quiz1,
+.Quiz2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: lightseagreen;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.Menu button,
+.Quiz1 button,
+.Quiz2 button {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Menu,
+.Quiz1,
+.Quiz2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* CONTAINER DETAILS */
+
+.container__wrap-img {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 56.25em) {
+}
+
+.container__deatils {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid rgb(50 176 3/95%); */
+}
+
+.container__deatils .container__Info {
+  padding: 1.5rem 2rem 2.5rem;
+  border: 1px solid rgb(50 176 3/95%);
+  background: rgb(50 176 3/35%);
+  color: #fff;
+  background: #000;
+  /* text-align: center; */
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0 0 35%;
+  margin: 1rem;
+
+  text-align: center;
+}
+
+.container__Info h2 span {
+  font-size: 2rem;
+}
+
+.container__Info h2 {
+  font-family: "Futura", sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1.3rem;
+}
+
+.container__Info p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.container__Info button {
+  display: inline-block;
+  background: #2fa703;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: none;
+  min-width: 28rem;
+  font-weight: 400;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3 ease-in-out;
+}
+
+.container__Info button:hover {
+  background-color: #227d01;
+}
+
+.container__Info button span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+/* FOOTER */
+.footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.footer span,
+.footer__wrap-icon {
+  cursor: pointer;
+  margin: 4px;
+}
+
+.footer__wrap-icon {
+  align-self: center;
+}
+
+.footer__icon {
+  width: 3rem;
+}
+
+/* FOOTER ENDS HERE */
+
+/* QUIZ */
+.Quiz1,
+.EndScreen {
+  background-image: url("./img/seconBack.PNG");
+  min-height: 100vh;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+/* ENDSCREEN STYLING */
+
+@media only screen and (max-width: 75em) {
+  .Wrap__header .img1 {
+    height: 10rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container__wrap-img {
+    max-height: 20rem;
+  }
+
+  .container__deatils .container__Info {
+    padding: 5.5rem 4rem 5.5rem;
+    font-size: 4rem;
+    margin-bottom: 2.3rem;
+    flex: 0 0 40%;
+  }
+
+  .container__Info h2 span {
+    font-size: 2.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .container__Info p {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  .container__Info button {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    margin-top: 20rem;
+  }
+
+  .footer span {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .Wrap__header .img1 {
+    height: 10rem;
+  }
+
+  .container {
+    max-height: 100vh;
+  }
+
+  .container__wrap-img {
+    margin-top: 11rem;
+    margin-bottom: 12rem;
+  }
+  .container__deatils .container__Info {
+    margin-bottom: 10rem;
+    padding: 4rem;
+    flex: 0 0 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .endscreen__info {
+    height: 96rem;
+  }
+
+  .container__Info h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 2.3rem;
+  }
+
+  .container__Info h2 span {
+    font-size: 2.59rem;
+  }
+
+  .container__Info p {
+    font-size: 2.5rem;
+  }
+
+  .container__Info button {
+    font-size: 2.7rem;
+  }
+
+  .container__Info button span {
+    font-size: 2.6rem 0.1rem;
+  }
+
+  .footer {
+    margin-top: 10%;
+  }
+
+  .footer__wrap-icon {
+    font-size: 2.5rem;
+    display: none;
+    /* margin-top: 3rem; */
+  }
+
+  .footer span {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .wrap {
+    max-width: 119rem;
+  }
+
+  .Wrap__header {
+    padding-top: 11rem;
+  }
+
+  .Wrap__header .img1 {
+    height: 15rem;
+  }
+
+  .Wrap__header .img2 {
+    height: 9rem;
+  }
+
+  .container__deatils {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+  }
+
+  .container__deatils .container__Info {
+    /* margin-bottom: 10rem; */
+    padding: 6rem;
+    flex: 0 0 50%;
+  }
+
+  .container__Info h2 {
+    font-size: 5rem;
+    line-height: 1.4;
+    margin-bottom: 3.3rem;
+  }
+
+  .container__Info h2 span {
+    font-size: 3.59rem;
+  }
+
+  .container__Info p {
+    font-size: 4.2rem;
+  }
+
+  .container__Info button {
+    font-size: 3.9rem;
+    padding: 2rem;
+  }
+
+  .container__Info button span {
+    display: block;
+    font-size: 3.6rem;
+    /* font-weight: 600; */
+    padding: 0.8rem 0;
+  }
+
+  .container__wrap-img {
+    margin-top: 18rem;
+    margin-bottom: 1rem;
+  }
+
+  .container__wrap-img {
+    max-height: 20rem;
+  }
+
+  .footer {
+    margin-top: 30%;
+  }
+
+  .footer span {
+    font-size: 4rem;
   }
 }

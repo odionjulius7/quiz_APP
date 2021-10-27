@@ -1,0 +1,237 @@
+.endscreen__info {
+  display: flex;
+  align-items: center;
+  height: 50rem;
+  justify-content: space-around;
+  max-width: 124rem;
+  margin-top: 4rem;
+}
+
+.endscreen__info .endscreen__col,
+.endscreen__info .endscreen__col-2 {
+  /* background-color: lawngreen; */
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2rem; */
+}
+
+/* .endscreen__info .endscreen__col-2 {
+  flex: 0 0 60%;
+} */
+
+.endscreen__score {
+  background-image: url("../img/score.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+  width: 30rem;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.endscreen__score span {
+  color: #f3931b;
+  /* font-family: "Futura Condensed", sans-serif; */
+  font-size: 10rem;
+  padding-top: 1.4rem;
+}
+
+.endscreen__content {
+  /* margin-top: 12rem; */
+  margin-bottom: 9rem;
+  padding: 0 2rem;
+  /* width: 80%; */
+}
+
+.endscreen-folder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.endscreen__content-title {
+  font-size: 4rem;
+  color: #2fa703;
+  text-align: center;
+  font-weight: 500;
+  padding-left: 3.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.endscreen__content-subtitle {
+  color: #ccc;
+  font-size: 1.6rem;
+  /* margin-bottom: 3rem; */
+  font-weight: 600;
+  text-align: center;
+  /* padding-left: 34px; */
+  /* padding-right: 10px; */
+}
+
+/* form */
+
+.endscreen__form-group {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  width: 120%;
+}
+
+.endscreen__form-group label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.endscreen__form-group .endscreen__form-control {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #707070;
+  border-radius: 0;
+  height: 30px;
+  margin-bottom: 5rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.endscreen__form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: none;
+}
+
+.endscreen__form-control:focus-visible {
+  outline: none;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-wrapper button {
+  text-align: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #227d01;
+  color: #fff;
+}
+
+.btn-wrapper button:hover {
+  background-color: #143d05;
+}
+
+/* medium */
+@media only screen and (max-width: 56.25em) {
+  .endscreen__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87rem;
+    justify-content: space-around;
+    max-width: 122rem;
+    margin-top: 5rem;
+  }
+
+  .endscreen__info .endscreen__col,
+  .endscreen__info .endscreen__col-2 {
+    flex: -1 0 50%;
+  }
+
+  .endscreen__info {
+    margin-right: 4rem;
+  }
+
+  .endscreen__content-title {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-left: 0.4rem;
+  }
+
+  .endscreen__content-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .endscreen__form-group .endscreen__form-control {
+    height: 31px;
+    margin-bottom: 6rem;
+    font-size: 2.5rem;
+  }
+
+  .endscreen__form-group label {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+/* small screen */
+@media only screen and (max-width: 37.5em) {
+  .endscreen__info {
+    flex-direction: column;
+    height: 140rem;
+    max-width: 122rem;
+    margin-top: 46rem;
+  }
+
+  .endscreen__score {
+    height: 60rem;
+    width: 60rem;
+  }
+
+  .endscreen__score span {
+    font-size: 14rem;
+  }
+
+  .endscreen__content-title {
+    font-size: 8rem;
+  }
+
+  .endscreen__content-subtitle {
+    font-size: 3.8rem;
+  }
+
+  .endscreen__form-group label {
+    font-size: 4.5rem;
+  }
+
+  .endscreen__form-group .endscreen__form-control {
+    font-size: 5.5rem;
+  }
+
+  .btn-wrapper button {
+    padding: 3rem;
+  }
+}
+
+/* .endscreen__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 57rem;
+  justify-content: space-around;
+  max-width: 125rem;
+  margin-top: 43rem;
+  margin-bottom: 23rem;
+} */
